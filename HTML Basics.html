@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title> html forms </title>
+	</head>
+	<body>
+		<header>
+			<h1>some header of the page</h1>
+		</header>
+		<section>
+			<h3>html forms</h3>
+			<hr>
+			<form action="">
+				<div>
+                    <label for="firstName">First Name:</label>
+                    <input name="firstName" type="text"></input>
+                </div>
+                <div>
+                    <label for="lastName">Last Name:</label>
+                    <input name="lastName" type="text"></input>
+                </div>
+                <div>
+                    <label for="textarea1">Text Area: </label>      
+                </div>  
+                <div>
+                    <textarea name="textarea1" cols="30" rows="10"></textarea>
+                </div>
+                <div>
+                    <label for="true">True</label>
+                    <input name="true" type="checkbox"></input>
+                    <label for="false">False</label>
+                    <input name="false" type="checkbox"></input>
+                </div>
+                <div>
+                	<label for="option one">Option one</label>
+                	<input type="radio" name="option one"></input>	
+                </div>
+                <div>
+                	<label for="option two">Option two</label>
+                	<input type="radio" name="option two"></input>	
+                </div>
+                <div>
+                	<label for="qualification">Choose  a qualification:</label>
+                	<select id="qualification">
+                		<option value="choose">choose*</option>
+                		<option value="doctor">doctor</option>
+                		<option value="engineer">engineer</option>
+                		<option value="teacher">teacher</option>
+                	</select>
+                </div>
+                <div>
+                	<button type="submit">submit</button>
+                </div>
+                <div>
+                	<label for="DOB">DOB</label>
+                	<input type="date" id="DOB" name="DOB"></input>
+                </div>
+                <div>
+                	<label for="DOB">DOB (date and time)</label>
+                	<input type="datetime-local" id="DOB" name="DOB"></input>
+                </div>
+                <div>
+                	<label for="email">Enter email address:</label>
+                	<input type="email" id="email" name="email"></input>
+                </div>
+                <div>
+                	<label for="file">Select a file</label>
+                	<input type="file" id="file" name="file"></input>
+                </div>
+                <div>
+                	<label for="quantity">Quantity (1 to 5):</label>
+                	<input type="number" id="quantity" name="quantity" min="1" max="10"></input>
+                </div>
+                <div>
+                	<label for="password">Password:</label>
+                	<input type="password" id="password" name="password" minlength="8"></input>
+                </div>
+                <div>
+                	<label for="volume">Volume (0 and 50):</label>
+                	<input type="range" id="volume" name="volume" min="0" max="50">
+                </div>
+                <div>
+                	<input type="reset" value="Reset">
+                </div>
+                <div>	
+                	<label for="search">Search Google:</label>
+                	<input type="search" id="search" name="search">
+                	<input type="submit">
+                </div>
+                <div>
+                	<label for="phone">Enter a phone number:</label>
+                    <input type="tel" id="phone" name="phone">Format: xxx-xxx-xxxx</input>
+                    <input type="submit">
+                </div>
+                <div>
+                	<label for="time">Select a time:</label>
+                	<input type="time" id="time" name="time">
+                    <input type="submit">
+                </div>
+                <div>
+                	<label for="website">Add website:</label>
+                	<input type="url" id="website" name="website"></input>
+                </div>
+                <div>
+                	<label for="week">Select a week:</label>
+                	<input type="week" name="week"></input>
+                </div>	
+            </form>    
+		</section>	
+		<footer>
+            <h2>Some footer for the page</h2>
+        </footer>
+    </body>
+</html>        
