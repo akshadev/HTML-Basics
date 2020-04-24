@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>FLOATS HTML</title>
+    <style>
+        .container-box {
+                border: 1px solid lightskyblue;
+                width: 500px;
+                height: 200px;
+                background-color: lightskyblue;
+                border-radius:5%;
+                margin:auto;
+            }
+
+        .circle-2{
+            padding:30px;
+            border:1px solid lightskyblue;
+            height:40px;
+            width:40px;
+            border-radius:100%;
+            background: white;
+            margin: 40% auto;
+        }
+        .circle-box{
+            height:100%;
+            float:left;
+            width:20%;
+        }
+        .content-box{
+            padding:5% 0;
+            height:100%;
+            float:left;
+            width:80%;
+        }
+        .clearfix{
+            clear:both;
+        }
+        *{
+            box-sizing:border-box;
+        }
+    </style>
+    <body>
+        <p>Some text</p>
+        <div class="container-box">
+            <div class="circle-box">
+                <div class="circle-2"></div>
+            </div>
+            <div class="content-box">
+                <!-- <div class="heading-box"> -->
+                    <h3>Bob Marley</h3>
+                <!-- </div> -->
+                <!-- <div class="text-box"> -->
+                    <p>
+                        Aptent vel egestas vestibulum aliquan ullamcorper volutpat ullamcorper pharetra hac pasuera a rhoncus purus molistic
+                        torquent scelerisque purus curus dictum ornare
+                    </p>
+                <!-- </div> -->
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </body>
+</html>
