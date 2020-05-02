@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>CSS Positions</title>
+        <style>
+            * {
+                box-sizing: border-box;
+            }
+
+            .container {
+                height: 120vh;
+                background-color: aliceblue;
+                margin: 0 5%;
+                border: 1px solid;
+                padding: 5%;
+            }
+
+            .element {
+                width: 200px;
+                height: 200px;
+                padding: 10px;
+                border: 1px solid;
+            }
+
+            .element-container {
+                border: 1px solid red;
+                padding: 20px;
+                position: relative;
+            }
+
+            .static {
+                background-color: antiquewhite;
+            }
+
+            .relative {
+                background-color: burlywood;
+                position: relative;
+                left: 50px;
+                top: 50px;
+                z-index: 1;
+            }
+
+            .absolute {
+                background-color: coral;
+                position: absolute;
+                right: 50px;
+                top: 50px;
+                z-index: 2;
+            }
+
+            .fixed {
+                background-color: cadetblue;
+                position: fixed;
+                right: 50px;
+                bottom: 5%;
+                z-index: 3;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="container">
+            <h3>CSS Positions</h3>
+            <label for="">Type of CSS Positions</label>
+            <ul>
+                <li>Static</li>
+                <li>Relative</li>
+                <li>Absolute</li>
+                <li>Fixed</li>
+            </ul>
+            <hr />
+            <div class="element-container">
+                <div class="element static">
+                    This element is aligned or positioned in static mode
+                    <br />
+                    Normal browser flow
+                </div>
+                <div class="element relative">
+                    This element is aligned or positioned in relative mode
+                    <br />
+                    Relative to parent static or relative position element
+                </div>
+                <div class="element absolute">
+                    This element is aligned or positioned in absolute mode
+                    <br />
+                    Absolute to closest relatively positioned element
+                </div>
+                <div class="element fixed">
+                    This element is aligned or positioned in fixed mode
+                    <br />
+                    Fixed mode stays on the page no matter what
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
